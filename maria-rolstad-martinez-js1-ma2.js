@@ -12,9 +12,9 @@ const clickButton = document.querySelector("btn");
 
 function afterClick(){
     console.log("I was clicked");
-};
+}
 
-clickButton.addEventListener("click", afterClick)
+clickButton.addEventListener("click", afterClick);
 
 // question 3
 
@@ -22,7 +22,7 @@ const firstName = document.querySelector("#firstName");
 
 function logKeyValue(event) {
     console.dir(event.key);
-};
+}
 
 firstName.addEventListener("keydown", logKeyValue);
 
@@ -31,8 +31,8 @@ firstName.addEventListener("keydown", logKeyValue);
 const buttonHover = document.querySelector("button");
 
 function hoverCallback() {
-    console.log("button hover")
-};
+    console.log("button hover");
+}
 
 buttonHover.addEventListener("mouseover", buttonHover);
 
@@ -109,7 +109,7 @@ const intervalId = setInterval(logTime, 500);
 const placeholderText = document.querySelector("div.container");
 
 function updateText() {
-    placeholderText.innerText = "Text updated"
+    placeholderText.innerText = "Text updated";
 }
 
 setTimeout(updateText, 2000);
